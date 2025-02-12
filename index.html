@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Screen Recorder / v2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Screen Recorder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="recorder-container">
+      <h1><i class="fas fa-video"></i> Screen Recorder</h1>
+
+      <div class="timer" id="timer">00:00:00</div>
+
+      <div class="controls">
+        <button id="startButton" class="btn primary">
+          <i class="fas fa-play"></i> Start
+        </button>
+        <button id="pauseButton" class="btn warning" disabled>
+          <i class="fas fa-pause"></i> Pause
+        </button>
+        <button id="resumeButton" class="btn success" disabled>
+          <i class="fas fa-play"></i> Resume
+        </button>
+        <button id="stopButton" class="btn danger" disabled>
+          <i class="fas fa-stop"></i> Stop
+        </button>
+      </div>
+
+      <div class="video-container">
+        <video id="recordedVideo" controls></video>
+      </div>
+
+      <div class="share-container" id="shareContainer" style="display: none;">
+        <h3>Share Recording</h3>
+        <div class="share-options">
+          <button id="downloadBtn" class="btn primary">
+            <i class="fas fa-download"></i> Download
+          </button>
+          <button id="copyLinkBtn" class="btn info">
+            <i class="fas fa-link"></i> Copy Link
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
